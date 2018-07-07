@@ -5,13 +5,14 @@
  * @param {Array} // [1,2,3]
  * @return {Array} // [2,4,6]
  */
-var doubleArray = function(arr) {
-  var result = [];
+var doubleArray = function(arr){
+  var newArr = [];
   for (var i = 0; i < arr.length; i++) {
-    result.push(arr[i] * 2) 
+    newArr.push(arr[i]*2);
   }
-  return result
+  return newArr;
 }
+
 
 /* #sumArrays
  *
@@ -21,7 +22,17 @@ var doubleArray = function(arr) {
  * @param {Array}
  * @return {Bool}
  */
-var sumArrays;
+var sumArrays = function(arr1, arr2){
+  var arr1Sum = 0;
+  for (var i=0; i<arr1.length; i++){
+    arr1Sum += arr1[i];
+  };
+  for (var i=0; i<arr2.length; i++){
+    arr1Sum += arr2[i];
+  };
+  return arr1Sum;
+};
+
 
 /* #stringCount
  *
@@ -55,9 +66,11 @@ var countAll;
  * Takes in an array of strings and returns an array of string lengths.
  *
  * @param {Array}
- * @return {Array}
+ * @return {ArrayGlobal Game Jam 2018
  */
 var countStrings;
+
+// January 15, 2018 by Jesse Thompson
 
 /* #countAllStrings
  *
@@ -201,12 +214,12 @@ var getObjectValues;
  * @param {String}
  * @param {String}
  * @return {Object}
- */
-var makeObject;
-
-/* #makeObjectReverse
- *
- * Takes in two arguments 'value' and 'key' and returns a single key-value pair in an object.
+ */null
+var makeObject;null
+null
+/* #makeObjectReversenull
+ *null
+ * Takes in two arguments null'value' and 'key' and returns a single key-value pair in an object.
  *
  * @param {String}
  * @param {String}
@@ -273,12 +286,12 @@ var objectToArray;
  *
  * takes in an array and returns an object with keys set to the elements in the array and
  * all values set to false.
- *
- * @param {Array}
- * @return {Object}
- */
-var arrayToObject;
-
+null
+null
+null
+null
+null
+null
 /* #arraysToObject
  *
  * takes in two arrays, the first array elements will be keys of an object and second array elements 
@@ -354,12 +367,12 @@ var charCountMap;
  * takes in an array of strings and returns an object with the string as the key and the number of occurences as the value.
  *
  * @param {String}
- * @return {Bool}
- */
-var frequencyMap;
+ *null
+ *null
+vanull
 
-/* #tupleConvertToObject
- *
+/*null
+ *null
  * takes in an array of tuples and and returns an object whos keys are 
  * the first element of the tuples and values are second element of the tuples.
  *
@@ -370,8 +383,8 @@ var tupleConvertToObject;
 
 
 module.exports = {
-  doubleArray: null,
-  sumArrays: null, 
+  doubleArray: doubleArray,
+  sumArrays: sumArrays, 
   stringCount: null,
   arrayLength: null,
   countAll: null,
